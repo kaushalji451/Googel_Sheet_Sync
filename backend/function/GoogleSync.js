@@ -20,27 +20,43 @@ const appendData = async (data) => {
   const sheetName = 'Sheet1';
 
   const newRows = data.map(person => [
+    person.id,
     person.name,
     person.email,
-    person.phone_no,
-    person.father_name,
+    person.phoneNo,
     person.gender,
+    person.appDate,
+    person.astroAmount,
+    person.astrologyType,
+    person.country,
+    person.date,
+    person.nationality,
+    person.organization,
+    person.place,
+    person.poojaAmount,
+    person.poojaType,
+    person.reason,
+    person.shraddhaType,
+    person.time,
+    person.vastuAmount,
+    person.vastuType,
+    person.yogaAmount,
+    person.yogaType,
   ]);
-
   const readRes = await sheets.spreadsheets.values.get({
     spreadsheetId,
-    range: `${sheetName}!A2:E`,
+    range: `${sheetName}!A2:V`,
   });
 
   const existingRows = readRes.data.values || [];
-  const existingEmails = new Set(existingRows.map(row => row[1])); // Collect all existing emails
+  const existingId = new Set(existingRows.map(row => row[1])); // Collect all existing ID
 
-  const rowsToAppend = newRows.filter(row => !existingEmails.has(row[1]));
+  const rowsToAppend = newRows.filter(row => !existingId.has(row[1]));
 
   if (rowsToAppend.length > 0) {
     await sheets.spreadsheets.values.append({
       spreadsheetId,
-      range: `${sheetName}!A:E`,
+      range: `${sheetName}!A:V`,
       valueInputOption: 'RAW',
       resource: {
         values: rowsToAppend,

@@ -1,73 +1,100 @@
 const dummyData = [
-    {
-        "name": "Amit Sharma",
-        "email": "amit.sharma@example.com",
-        "phone_no": "9123001234",
-        "father_name": "Rajesh",
-        "gender": "Male"
-    },
-    {
-        "name": "Neha Verma",
-        "email": "neha.verma@example.com",
-        "phone_no": "9988001122",
-        "father_name": "Prakash",
-        "gender": "Female"
-    },
-    {
-        "name": "Rohit Yadav",
-        "email": "rohit.yadav@example.com",
-        "phone_no": "9900112233",
-        "father_name": "Mahesh",
-        "gender": "Male"
-    },
-    {
-        "name": "Pooja Singh",
-        "email": "pooja.singh@example.com",
-        "phone_no": "9777888999",
-        "father_name": "Suraj",
-        "gender": "Female"
-    },
-    {
-        "name": "Vikram Chauhan",
-        "email": "vikram.chauhan@example.com",
-        "phone_no": "9666778899",
-        "father_name": "Ramesh",
-        "gender": "Male"
-    },
-    {
-        "name": "Anjali Desai",
-        "email": "anjali.desai@example.com",
-        "phone_no": "9555667788",
-        "father_name": "Suresh",
-        "gender": "Female"
-    },
-    {
-        "name": "Manish Kapoor",
-        "email": "manish.kapoor@example.com",
-        "phone_no": "9444556677",
-        "father_name": "Naresh",
-        "gender": "Male"
-    },
-    {
-        "name": "Swati Tiwari",
-        "email": "swati.tiwari@example.com",
-        "phone_no": "9333445566",
-        "father_name": "Kamal",
-        "gender": "Female"
-    },
-    {
-        "name": "Nikhil Bansal",
-        "email": "nikhil.bansal@example.com",
-        "phone_no": "9222334455",
-        "father_name": "Gopal",
-        "gender": "Male"
-    },
-    {
-        "name": "Divya Nair",
-        "email": "divya.nair@example.com",
-        "phone_no": "9111223344",
-        "father_name": "Harish",
-        "gender": "Female"
-    }
+  {
+    "id": 2,
+    "name": "Priya Verma",
+    "email": "priya.verma@example.com",
+    "phoneNo": 8765432109,
+    "gender": "Female",
+    "appDate": "2025-05-02",
+    "astroAmount": 1800,
+    "astrologyType": "KP Astrology",
+    "country": "India",
+    "date": "2025-05-08",
+    "nationality": "Indian",
+    "organization": "Divine Guidance Center",
+    "place": "Prayagraj",
+    "poojaAmount": 2000,
+    "poojaType": "Lakshmi Pooja",
+    "reason": "Wealth and Success",
+    "shraddhaType": null,
+    "time": "02:00 PM",
+    "vastuAmount": null,
+    "vastuType": null,
+    "yogaAmount": 1500,
+    "yogaType": "Kundalini Yoga"
+  },
+  {
+    "id": 3,
+    "name": "Rajesh Kumar",
+    "email": "rajesh.kumar@example.com",
+    "phoneNo": 9876123450,
+    "gender": "Male",
+    "appDate": "2025-05-03",
+    "astroAmount": null,
+    "astrologyType": null,
+    "country": "India",
+    "date": "2025-05-10",
+    "nationality": "Indian",
+    "organization": "Cosmic Energy Solutions",
+    "place": "Ayodhya",
+    "poojaAmount": 3500,
+    "poojaType": "Hanuman Pooja",
+    "reason": "Courage and Strength",
+    "shraddhaType": "Sarvapitri Amavasya",
+    "time": "11:00 AM",
+    "vastuAmount": 4000,
+    "vastuType": "Business Consultation",
+    "yogaAmount": null,
+    "yogaType": null
+  },
+  {
+    "id": 4,
+    "name": "Sneha Gupta",
+    "email": "sneha.gupta@example.com",
+    "phoneNo": 7654987321,
+    "gender": "Female",
+    "appDate": "2025-05-03",
+    "astroAmount": 1200,
+    "astrologyType": "Nadi Astrology",
+    "country": "India",
+    "date": "2025-05-12",
+    "nationality": "Indian",
+    "organization": "Mystic Realms",
+    "place": "Mathura",
+    "poojaAmount": null,
+    "poojaType": null,
+    "reason": "Career Guidance",
+    "shraddhaType": null,
+    "time": "03:30 PM",
+    "vastuAmount": 2500,
+    "vastuType": "Plot Analysis",
+    "yogaAmount": 1000,
+    "yogaType": "Restorative Yoga"
+  },
+  {
+    "id": 5,
+    "name": "Vikram Singh",
+    "email": "vikram.singh@example.com",
+    "phoneNo": 9321654780,
+    "gender": "Male",
+    "appDate": "2025-05-04",
+    "astroAmount": 2000,
+    "astrologyType": "Western Astrology",
+    "country": "India",
+    "date": "2025-05-15",
+    "nationality": "Indian",
+    "organization": "Celestial Insights",
+    "place": "Haridwar",
+    "poojaAmount": 3000,
+    "poojaType": "Shiv Pooja",
+    "reason": "Spiritual Growth",
+    "shraddhaType": null,
+    "time": "09:00 AM",
+    "vastuAmount": null,
+    "vastuType": null,
+    "yogaAmount": 1800,
+    "yogaType": "Ashtanga Yoga"
+  }
+    
 ]
 module.exports = dummyData; // Export the dummy data array
